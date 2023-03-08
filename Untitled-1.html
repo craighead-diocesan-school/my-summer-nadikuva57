@@ -3,6 +3,10 @@
     <h1>MY SUMMER</h1>
   </header>
 
+  <nav>
+    <a href="page_2.html"> Job </a>
+  </nav>
+
   <main>
     <h2>Where I spent the summer: Home (2022-2023)</h2>
 
@@ -30,46 +34,71 @@
 </body>
 
 <style>
-  h1 {
-   font-family: sans-serif;
-   font-size: 3em;
-   color: rgb(255, 255, 255);
-   text-shadow: 2px 2px rgba(23, 7, 168, 0.637);
-   background-color: rgba(68, 126, 165, 0.76);
-   text-align: center;
-  }
 
-  h1:hover {
-  background-color: rgba(202, 160, 68, 0.74);
-  }
+  body {
+      display: grid;
+      grid: " h h n " auto
+            " m m m " auto
+            " f f . " auto
+            / auto auto auto;
+    }
 
-  h2 {
-    background-color: rgba(112, 183, 216, 0.63);
-    color: rgba(18, 14, 238, 0.582);
-    margin-middle: 10%;
-    text-align: left;
-  }
+    header { grid-area: h; }
+    main   { grid-area: m; }
+    nav    { grid-area: n; }
+    footer { grid-area: f; }
 
-  h2:hover {
-  background-color: rgba(230, 211, 171, 0.74);
+    h1 {
+     font-family: sans-serif;
+     font-size: 3em;
+     color: rgb(255, 255, 255);
+     text-shadow: 2px 2px rgba(23, 7, 168, 0.637);
+     background-color: rgba(68, 126, 165, 0.76);
+     text-align: center;
+    }
+
+    h1:hover {
+    background-color: rgba(158, 240, 82, 0.74);
+    }
+
+    a {
+      text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: 2em;
+    margin-right: 0.05em;
   }
 
   a:hover {
-  background-color: rgba(202, 160, 68, 0.74);
-  }
+    background-color: rgba(196, 137, 49, 0.74);
+    }
 
-  p {
-    text-align: left;
-  }
+    h2 {
+      background-color: rgba(112, 183, 216, 0.63);
+      color: rgba(18, 14, 238, 0.582);
+      margin-middle: 10%;
+      text-align: left;
+    }
 
-  a {
-    text-align: center;
-  }
+    h2:hover {
+    background-color: rgba(167, 122, 25, 0.74);
+    }
 
-  img {
-    border-radiues: 50%
-    filter: grayscale(100%)
-    filter: saturate(500%)
-    filter: sepia(100%)
-  }
+    p {
+      text-align: left;
+    }
+
+    a {
+      text-align: center;
+    }
+
+    img {
+      border-radiues: 50%
+      filter: grayscale(100%)
+      filter: saturate(500%)
+      filter: sepia(100%)
+    }
 </style>
